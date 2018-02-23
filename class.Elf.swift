@@ -7,6 +7,11 @@ class Elf {
             self._nickname = n
         }
     }
+
+    init(nickname: String) {
+        self.nickname = nickname
+    }
+
     func pack(_ package: Packaging, _ toy: Toy) -> String {
         if (package.isOpen == false) {
             return "Sorry this package is not open"
@@ -16,7 +21,13 @@ class Elf {
             return "Yeaaaah! Just packing the toy ~~ \(toy.type) ~~"
         }
     }
-    init(nickname: String) {
-        self.nickname = nickname
-    }
+
+
+    func Unpack(_ package: Packaging) -> String {
+       if (package.isOpen == true && package.toy == nil) {
+           return "Sorry this package is already empty"
+       } else {
+           return "Ooooooh! Just unpacking the toy ~~ \(toy.type) ~~"
+       }
+   }
 }

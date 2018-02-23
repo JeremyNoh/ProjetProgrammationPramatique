@@ -4,6 +4,4 @@ protocol Packaging {
     var toy: Toy? { get set }
     func insert(toy: Toy)
     func open()
-
-
 }

@@ -11,11 +11,10 @@ class DragonBall: Figurine{
 
   init(_ character: DBHeroes) {
        self._character = character
-       print("\(self._character) is singing -->\n CHA-LA HEAD CHA-LA Nani ga okite mo kibun wa heno-heno kappa\n CHA-LA HEAD CHA-LA Mune ga pachi-pachi suru hodo Sawagu Genki-Dama --Sparking ")
+       print("\(self._character) is singing -->\n CHA-LA HEAD CHA-LA Nani ga okite mo kibun wa heno-heno kappa \n CHA-LA HEAD CHA-LA Mune ga pachi-pachi suru hodo Sawagu Genki-Dama --Sparking ")
    }
 
    func isMoved() {
        print("Kamé Hamé Ha!")
    }
-
 }
